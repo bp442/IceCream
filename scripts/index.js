@@ -62,10 +62,10 @@ function calculateOrder() {
 
 function radioClick() {
     if (document.getElementById("cupRadio").checked) {
-        toppingsList.style.visibility = "visible";
+        toppingsList.style.display = "block";
     }
     else {
-        toppingsList.style.visibility = "hidden";
+        toppingsList.style.display = "none";
         document.getElementById("sprinklesCheck").checked = false;
         document.getElementById("whippedCreamCheck").checked = false;
         document.getElementById("hotFudgeCheck").checked = false;
