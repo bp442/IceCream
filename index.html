@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ice Cream</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center">ICE CREAM!</h1>
+    <form id="iceCream" onsubmit="return false">
+    <div class="container" style="width:50%;">
+        <div class="row">
+            <div class="col">
+                <p>Number of scoops: </p>
+            </div>
+            <div class="col">
+                <input type="number" id="numScoopsText" min="1" max="4" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="coneRadio" checked>
+                    <label class="form-check-label" for="coneRadio">
+                        Cone
+                    </label>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="cupRadio">
+                    <label class="form-check-label" for="cupRadio">
+                        Cup
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <div id="toppingsList" style="visibility: hidden;">
+            <h4>Toppings</h4>
+            <div class="container border p-3">
+                <div class="row">
+                    <div class="form-check col ms-2">
+                        <input class="form-check-input" type="checkbox" value="" id="sprinklesCheck">
+                        <label class="form-check-label" for="sprinklesCheck">
+                            Sprinkles ($.50)
+                        </label>
+                    </div>
+                    <div class="form-check col">
+                        <input class="form-check-input" type="checkbox" value="" id="whippedCreamCheck">
+                        <label class="form-check-label" for="whippedCreamCheck">
+                            Whipped Cream ($0.25)
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-check col ms-2">
+                        <input class="form-check-input" type="checkbox" value="" id="hotFudgeCheck">
+                        <label class="form-check-label" for="hotFudgeCheck">
+                            Hot Fudge($1.25)
+                        </label>
+                    </div>
+                    <div class="form-check col">
+                        <input class="form-check-input" type="checkbox" value="" id="cherryCheck">
+                        <label class="form-check-label" for="cherryCheck">
+                            Cherry($0.25)
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <br>
+
+        <div class="container text-start" style="width:50%">
+            <div class="row justify-content-around">
+                <input type="submit" class="btn btn-secondary" id="orderBtn" value="Submit Order">
+                <div class="col">
+                    <p>Base price </p>
+                </div>
+                <div class="col">
+                    <p id="basePrice"> $xx.xx </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Tax: </p>
+                </div>
+                <div class="col">
+                    <p id="taxCost"> $xx.xx </p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <p>Total Due: </p>
+                </div>
+                <div class="col">
+                    <p id="totalCost"> $xx.xx </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
